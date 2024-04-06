@@ -29,7 +29,7 @@ client/.vite
 client/*.local
 
 # Editor directories and files
-.vscode/*
+.vscode
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -38,7 +38,7 @@ client/*.local
 *.njsproj
 *.sln
 *.sw?
-client/.vscode/*
+client/.vscode
 client/!.vscode/extensions.json
 client/.idea
 client/.DS_Store
