@@ -1,12 +1,15 @@
 {
   "nodeModulesDir": true,
   "tasks": {
-    "dev": "deno run -A npm:vite ./client",
-    "build": "deno run -A npm:vite build ./client",
-    "preview": "deno run -A npm:vite preview ./client",
-    "serve": "deno run -A jsr:@std/http@^0.220.0/file_server dist/"
+    "client:dev": "deno run -A npm:vite ./client",
+    "client:build": "deno run -A npm:vite build ./client",
+    "client:preview": "deno run -A npm:vite preview ./client",
+    "client:serve": "deno run -A jsr:@std/http@^0.220.0/file_server dist/",
+    "server:run": "deno run -A --unstable-kv --env ./server/main.ts",
+    "dev": "deno task server:run & deno task client:dev"
   },
   "imports": {
+    "hono": "npm:hono@^4.2.2",
     "solid-js": "npm:solid-js@^1.8.16",
     "vite": "npm:vite@^5.2.6",
     "vite-plugin-solid": "npm:vite-plugin-solid@^2.10.2"
@@ -15,5 +18,8 @@
     "lib": ["DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
     "jsxImportSource": "npm:solid-js@^1.8.16"
+  },
+  "fmt": {
+    "semiColons": false
   }
 }

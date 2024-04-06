@@ -3,9 +3,11 @@
   "packages": {
     "specifiers": {
       "npm:firebase@^9.17.1": "npm:firebase@9.23.0_@firebase+app@0.9.13_@firebase+app-compat@0.2.13_@firebase+app-types@0.9.0",
+      "npm:hono@^4.2.2": "npm:hono@4.2.2",
       "npm:solid-js@^1.8.16": "npm:solid-js@1.8.16_seroval@1.0.5",
       "npm:vite": "npm:vite@5.2.6",
-      "npm:vite-plugin-solid@^2.10.2": "npm:vite-plugin-solid@2.10.2_solid-js@1.8.16__seroval@1.0.5_vite@5.2.6_@babel+core@7.24.4"
+      "npm:vite-plugin-solid@^2.10.2": "npm:vite-plugin-solid@2.10.2_solid-js@1.8.16__seroval@1.0.5_vite@5.2.6_@babel+core@7.24.4",
+      "npm:vite@^5.2.6": "npm:vite@5.2.6"
     },
     "npm": {
       "@ampproject/remapping@2.3.0": {
@@ -1042,6 +1044,10 @@
         "integrity": "sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==",
         "dependencies": {}
       },
+      "hono@4.2.2": {
+        "integrity": "sha512-mDmjBHF6uBNN3TASdAbDCFsN9FLbrlgXyFZkhLEkU7hUgk0+T9hcsUrL/nho4qV+Xk0RDHx7gop4Q1gelZZVRw==",
+        "dependencies": {}
+      },
       "html-entities@2.3.3": {
         "integrity": "sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==",
         "dependencies": {}
@@ -1382,6 +1388,7 @@
   "remote": {},
   "workspace": {
     "dependencies": [
+      "npm:hono@^4.2.2",
       "npm:solid-js@^1.8.16",
       "npm:vite-plugin-solid@^2.10.2",
       "npm:vite@^5.2.6"

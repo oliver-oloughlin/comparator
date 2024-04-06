@@ -1,8 +1,8 @@
-import { createSignal } from "solid-js";
-import "./App.css";
+import { createSignal } from "solid-js"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = createSignal(0);
+  const [count, setCount] = createSignal(0)
   return (
     <div class="App">
       <img src="/vite-deno.svg" alt="Vite with Deno" />
@@ -27,7 +27,7 @@ function App() {
         Click on the Vite and Solid logos to learn more
       </p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
